@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 #font-style{
     font-family: 'Playfair Display', serif;
@@ -37,6 +38,8 @@
     background: white;
     margin: -60% 0 7% 55%;
     position: relative;
+    max-width: 100%;
+    overflow: hidden;
 }
 .list{
     font-size: 1.8rem;
@@ -71,6 +74,7 @@
     padding: 40px 0;
     text-align: center;
     font-size: 2rem;
+    overflow: hidden;
 }
 #product-placement{
     margin-bottom: 200px;
@@ -123,12 +127,12 @@
 }
 #third-body-image{
     display: grid;
-    grid-template-columns: 50% 5% 45%;
+    grid-template-columns: 50% 45%;
+    grid-gap: 5%;
 }
-#first-image{
-    margin-top: 10%;
-    height: 90%;
-    width: 90%;
+#image-one{
+    height: 100%;
+    width: 100%;
 }
 #image-two{
     background-color: whitesmoke;
@@ -138,7 +142,7 @@
     background-position: 100% 60%;
 }
 #third-body-text{
-    margin: -45% 32% 0 22%;
+    margin: -700px 480px 0 350px;
     padding: 80px;
     background: white;
     position: absolute;
@@ -166,6 +170,7 @@
 }
 #first-line{
     font-weight: bold;
+    transition: 2s;
 }
 #blogs{
     background: whitesmoke;
@@ -191,7 +196,7 @@
     grid-gap: 3%;
 }
 #blogs-libs a{
-    color: #393939;;
+    color: #393939;
     text-decoration: none;
 }
 #blogs-libs a:hover{
@@ -208,9 +213,9 @@
 }
 .libs{
     text-align: center;
-    padding: 15% 5% 75%;
+    padding: 60px 5% 240px;
     overflow: hidden;
-    max-height: 530px;
+    max-height: 535px;
 }
 .libs h2{
     font-family: 'Merriweather', serif; !important;
@@ -242,4 +247,72 @@
     background-size: cover;
     background-position: center;
     transition: 0.6s;
+}
+@media only screen and (max-width: 1000px){
+    #first-body{
+        padding: 0 10%;
+        width: 100%;
+    }
+    #box-one{
+        display: block;
+    }
+    #box-one-text{
+        margin: 0;
+    }
+    #box-two{
+        display: block;
+    }
+    #box-two-text{
+        margin: 0 60px 0 0;
+    }
+    #second-body{
+        display: block;
+    }
+    .our-placement{
+        width: 47.6%;
+    }
+    #policy{
+        grid-template-columns: 50% 50%;
+    }
+    #third-body-image{
+        display: block;
+    }
+    #third-body-text{
+        margin: 0;
+        position: relative;
+    }
+    #blogs-libs{
+        grid-template-columns: 50% 50%;
+    }
+    .libs{
+        max-height: 430px;
+    }
+}
+@media only screen and (max-width: 600px){
+    #first-body{
+        padding: 0 5%;
+        width: 100%;
+    }
+    #box-two-text{
+        margin: 0 100px 0 0;
+    }
+    .our-placement{
+        width: 100%;
+    }
+    #policy{
+        display: block;
+    }
+    #policy p{
+        border: 1px whitesmoke solid;
+    }
+    #third-body-image{
+        display: block;
+    }
+    #third-body-text{
+        margin: 0;
+        position: relative;
+    }
+    #blogs-libs{
+        grid-template-columns: 100%;
+    }
 }
