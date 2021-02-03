@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#heading{
+    padding: 15px 200px;
+    display: block;
+    background: black;
+    text-align: center;
+    overflow: hidden;
+}
+#heading a{
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 40px;
+    background: lightblue;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+#heading-left{
+    float: left;
+    display: block;
+}
+#heading-right{
+    float: right;
+    display: block;
+}

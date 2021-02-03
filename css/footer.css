@@ -1,0 +1,45 @@
+#ending{
+    font-family: 'Open Sans', sans-serif !important;
+    padding: 5% 15%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 2%;
+}
+#ending h2{
+    font-family: 'Playfair Display', serif;
+}
+#ending a{
+    text-decoration: none;
+    color: gray;
+}
+#ending a:hover{
+    color: black;
+}
+#grid-4{
+    grid-row-end: span 2;
+}
+#input-id{
+    width: 100%;
+    padding: 2%;
+    margin-top: -5%;
+    border: none;
+    border-bottom: 1px darkgoldenrod solid !important;
+}
+#submit-id{
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    background: darkgoldenrod;
+    border: none;
+    padding: 3%;
+    margin-top: 5%;
+    transition: 0.6s;
+}
+#submit-id:hover{
+    background: goldenrod;
+}
+#grid-5{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-end: span 3;
+}
