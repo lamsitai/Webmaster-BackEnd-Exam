@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*image*/
+ul ,#image-main{
+    float: left;
+}
+ul li{
+    list-style: none;
+}
+ul li img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#image-main{
+    max-width: 450px;
+
+}
+#image-main img{
+    margin-left: 20px;
+    margin-top: 20px;
+    max-height: 490px;
+}
+
+/*text*/
+.container-text{
+    margin-top: 20px;
+    margin-left: 100px;
+    float: left;
+}
+.content-text{
+    width: 600px;
+}
+.content-text a{
+    float: left;
+    margin-left: 20px;
+    padding-top: 10px;
+    text-decoration: underline;
+    pointer-events: none;
+}
+.content-text .icon{
+    color: #ff253a;
+    padding-top: 10px;
+    float: left;
+    display: inline-block;
+
+}
+.gia-thanh{
+    margin-top: 40px;
+    margin-bottom: -20px;
+    width: 20px;
+}
+
+.buttons_added {
+    opacity:1;
+    display:inline-block;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    white-space:nowrap;
+    vertical-align:top;
+    float: left;
+    margin-top: 50px;
+
+
+}
+.is-form {
+    overflow:hidden;
+    position:relative;
+    background-color:#f9f9f9;
+    height:40px;
+    width:30px;
+    padding:0;
+    text-shadow:1px 1px 1px #fff;
+    border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
+}
+
+.input-qty {
+    background-color:#fff;
+    width: 50px;
+    height:40px;
+    text-align:center;
+    font-size:1rem;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:0;
+    border-right:0;
+    padding:0;
+}
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+
+
+.add-card{
+    margin-left: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: #ff253a;
+    margin-top: 50px;
+    box-shadow:  3px 4px #d69191;
+    border: 0;
+}
+.add-card:hover{
+    margin-left: 22px;
+    box-shadow: 1px 2px #d69191;
+    transition: ease-in-out 0.4s;
+}
+
+
+
+
+
+
+
+

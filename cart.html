@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <script src="support/Bootstrap 3.4.1/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="support/fonawesome5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+<body>
+       <div class="container">
+           <div class="container-image col-md-6">
+               <ul>
+                   <li><img src="image/cart/image1.jpg" onclick="changeImage('one')" id="one"></li>
+                   <li><img src="image/cart/image2.jpg" onclick="changeImage('two')" id="two"></li>
+                   <li><img src="image/cart/image3.jpg" onclick="changeImage('three')" id="three"></li>
+                   <li><img src="image/cart/image4.jpg" onclick="changeImage('four')" id="four"></li>
+               </ul>
+
+               <div id="image-main">
+                   <img src="image/cart/image1.jpg" id="img-main">
+               </div>
+
+           </div>
+
+           <div class="container-text col-md-6">
+               <section class="content-text">
+                   <h2>Exfoliating Swipeys</h2>
+                   <p>Face Exfoliator</p>
+
+                   <div class="icon">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                   </div>
+                  <a>855 Reviews</a>
+
+                   <p class="gia-thanh">$50</p>
+
+                   <div class="buttons_added">
+                       <input class="minus is-form" type="button" value="-">
+                       <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="">
+                       <input class="plus is-form" type="button" value="+">
+                   </div>
+
+                   <button class="add-card" >
+                       <p>ADD TO BAG</p>
+                   </button>
+
+
+               </section>
+           </div>
+
+       </div>
+
+        <script src="js/image.js"></script>
+        <script src="js/add.js"></script>
+</body>
+</html>
