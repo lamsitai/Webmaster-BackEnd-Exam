@@ -11,6 +11,7 @@
 }
 #first-body{
     padding: 0 20%;
+    overflow: hidden;
 }
 #box-one{
     display: grid;
@@ -49,6 +50,7 @@
     font-size: 1rem;
 }
 #second-body{
+    margin-top: 180px;
     display: grid;
     grid-template-columns: 40% 60%;
     height: 100%;
@@ -71,20 +73,21 @@
     padding: 0 13%;
 }
 #title{
-    padding: 40px 0;
+    padding: 80px 0;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     overflow: hidden;
 }
 #product-placement{
     margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2%;
 }
 .our-placement{
-    border: 1px lightgray solid;
+    border: 1px whitesmoke solid;
     background: whitesmoke;
-    display: inline-block;
-    width: 30.3%;
-    margin: 1%;
+    display: block;
     overflow: hidden;
 }
 .our-placement h4{
@@ -96,6 +99,7 @@
 }
 .product-image{
     overflow: hidden;
+    height: 350px;
 }
 .product-image img{
     transition: 0.4s;
@@ -104,7 +108,7 @@
     transform: scale(1.1);
 }
 .product-info{
-    height: 125px;
+    height: 85px;
     position: relative;
 }
 #policy{
@@ -124,29 +128,21 @@
 #third-body{
     padding: 0 13%;
     margin-bottom: 100px;
+    height: 800px;
+    overflow: hidden;
 }
 #third-body-image{
     display: grid;
-    grid-template-columns: 50% 45%;
-    grid-gap: 5%;
-}
-#image-one{
-    height: 100%;
-    width: 100%;
-}
-#image-two{
-    background-color: whitesmoke;
-    background-image: url("../image/home/body-4th-image.jpg");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: 100% 60%;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
 }
 #third-body-text{
-    margin: -700px 480px 0 350px;
+    margin: -650px 500px 0 300px;
     padding: 80px;
     background: white;
     position: absolute;
-    height: 500px;
+    height: 300px;
+    overflow: hidden;
 }
 #third-body-text h4{
     margin-bottom: 40px;
@@ -156,25 +152,24 @@
     font-family: 'Open Sans', sans-serif !important;
 }
 #third-body-text h1{
-    padding: 5px;
+    padding: 10px;
     background: none;
     border: none;
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
     right: 60px;
     transition: 0.4s;
 }
 #third-body-text h1:hover{
     cursor: pointer;
-    right: 56px;
+    right: 53px;
 }
 #first-line{
     font-weight: bold;
-    transition: 2s;
 }
 #blogs{
     background: whitesmoke;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 }
 #blogs-top{
     padding: 60px;
@@ -186,7 +181,7 @@
     font-size: 1.2rem;
 }
 #blogs-top h2{
-    font-family: 'Merriweather', serif; !important;
+    font-family: 'Merriweather', serif !important;
     font-size: 2.5rem;
 }
 #blogs-libs{
@@ -215,7 +210,7 @@
     text-align: center;
     padding: 80px 5% 240px;
     overflow: hidden;
-    max-height: 535px;
+    height: 200px;
 }
 .libs h2{
     font-family: 'Merriweather', serif; !important;
@@ -250,8 +245,8 @@
 }
 @media only screen and (max-width: 1000px){
     #first-body{
-        padding: 0 10%;
-        width: 100%;
+        padding: 0 5%;
+        max-width: 100%;
     }
     #box-one{
         display: block;
@@ -263,41 +258,47 @@
         display: block;
     }
     #box-two-text{
-        margin: 0 60px 0 0;
+        display: block;
+        width: 70%;
+        margin: 0 55px 0 0;
     }
     #second-body{
         display: block;
+        margin: 0;
     }
-    .our-placement{
-        width: 47.6%;
+    #product-placement{
+        grid-template-columns: auto auto;
     }
     #policy{
         grid-template-columns: 50% 50%;
     }
-    #third-body-image{
+    #third-body{
         display: block;
     }
     #third-body-text{
         margin: 0;
         position: relative;
     }
+    #third-body-text h1{
+        display: none;
+    }
     #blogs-libs{
         grid-template-columns: 50% 50%;
     }
     .libs{
-        max-height: 430px;
+        height: 100px;
     }
 }
 @media only screen and (max-width: 600px){
     #first-body{
-        padding: 0 5%;
+        padding: 0;
         width: 100%;
     }
     #box-two-text{
         margin: 0 100px 0 0;
     }
-    .our-placement{
-        width: 100%;
+    #product-placement{
+        grid-template-columns: auto;
     }
     #policy{
         display: block;
@@ -305,11 +306,12 @@
     #policy p{
         border: 1px whitesmoke solid;
     }
-    #third-body-image{
+    #third-body{
         display: block;
     }
     #third-body-text{
         margin: 0;
+        display: block;
         position: relative;
     }
     #blogs-libs{
