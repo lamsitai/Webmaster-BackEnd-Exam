@@ -6,58 +6,446 @@
     <meta name=”viewport” content=”width=device-width, initial-scale=1″>
     <script src="support/Bootstrap 3.4.1/js/bootstrap.js"></script>
     <link rel="stylesheet" href="support/fonawesome5.15.1/css/all.css">
+    <link rel="stylesheet" href="support/Bootstrap 3.4.1/css/bootstrap.css">
+    <script src="support/jquery/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="css/cart.css">
+
+
 
 </head>
 <body>
-       <div class="container">
-           <div class="container-image col-md-6">
-               <ul>
+       <div class="container background-container">
+           <div class="container-group">
+           <div class="container-image col-md-5 col-xs-12">
+
+
+               <div id="image-main">
+                   <img src="image/cart/image1.jpg" id="img-main">
+               </div>
+
+               <ul class="image-control">
                    <li><img src="image/cart/image1.jpg" onclick="changeImage('one')" id="one"></li>
                    <li><img src="image/cart/image2.jpg" onclick="changeImage('two')" id="two"></li>
                    <li><img src="image/cart/image3.jpg" onclick="changeImage('three')" id="three"></li>
                    <li><img src="image/cart/image4.jpg" onclick="changeImage('four')" id="four"></li>
                </ul>
 
-               <div id="image-main">
-                   <img src="image/cart/image1.jpg" id="img-main">
-               </div>
-
            </div>
 
            <div class="container-text col-md-6">
-               <section class="content-text">
-                   <h2>Exfoliating Swipeys</h2>
-                   <p>Face Exfoliator</p>
+<!--               thương hiệu-->
+               <div class="header">
+                   <div class="brand">
+                       <span class="brand-and-author">
+                           <h6>Thương hiệu
+                           <a href="#" data-view-id="pdp_details_view_brand">Yekee</a>
+                           </h6>
+                       </span>
+                       <div class="brand-style">
+                           <div class="icon-wrap" data-view-id="pdp_details_like">
+                               <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/icons-like.svg">
+                           </div>
+                           <div class="icon-wrap shareFB" data-view-id="pdp_details_share">
+                               <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/icons-account-social.svg">
+                           </div>
+                       </div>
 
-                   <div class="icon">
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
                    </div>
-                  <a>855 Reviews</a>
+                   <h1 class="title">
+                       Lọ kem tẩy trắng da trị mụn
+                   </h1>
 
-                   <p class="gia-thanh">$50</p>
+                   <div class="indexStyle-Review">
+                       <p class="star__Wrapper" style="font-size: 16px">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </p>
+                       <a class="number">(Xem 2 đánh giá)</a>
+                   </div>
+               </div>
 
-                   <div class="buttons_added">
-                       <input class="minus is-form" type="button" value="-">
-                       <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="">
-                       <input class="plus is-form" type="button" value="+">
+
+<!--               tiền-->
+               <div class="body">
+                   <div class="summary">
+
+                   <div class="product-and-icon">
+                       <div class="product-price">
+                           <span class="product-price__current-price">49.179 đ</span>
+                           <span class="product-price__list-price">104.323 đ</span>
+                           <span class="product-price__discount-rate">-53%</span>
+                       </div>
+                       <div class="product-text">
+                           <div class="item">
+                               <span>Hàng quốc tế</span>
+                               <img class="view-more" src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/question.svg">
+                           </div>
+                           <div class="item">
+                               <span>Hoàn tiền 15% tối đa 600k/tháng</span>
+                               <img class="view-more" src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/question.svg">
+                           </div>
+                       </div>
                    </div>
 
-                   <button class="add-card" >
-                       <p>ADD TO BAG</p>
-                   </button>
 
 
-               </section>
+                   <div class="DiliveryZone">
+                       <div class="inner">
+                           Bạn hãy <span>Nhập địa chỉ</span> nhận hàng để được dự báo thời gian và chi phí
+                           giao hàng một cách chính xác
+                       </div>
+                   </div>
+
+                  <div class="indexStyle__AddCart">
+                      <div class="qty-and-message">
+                          <div class="QualityInput__Wrapper">
+                              <p class="label">Số lượng</p>
+
+                              <div class="group-input">
+                                  <button class="disabled">
+                                      <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/icons-remove.svg">
+                                  </button>
+                                  <input type="text" class="input" value="1">
+                                  <button>
+                                      <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/icons-add.svg">
+                                  </button>
+                              </div>
+
+                              <div class="group-button">
+                                  <button class="btn btn-add-to-cart" data-view-id="btn_add_to_cart_button">Chọn mua</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+               </div>
+               </div>
+
+           </div>
+           </div>
+           <h4 class="sp">Sản phẩm tương tự</h4>
+<!--           sản phẩm tương tự-->
+
+           <div class="container container--product">
+               <div class="slider--container">
+                       <div class="product--item col-md-4">
+                           <div class="product--item__picture">
+                               <img class="picture__item" src="image/cart/image1.jpg"/>
+                           </div>
+
+                           <div class="title1 " style="max-height: 40px; height: auto;">Kem rửa mặt
+                           </div>
+
+                           <div class="bottom">
+                               <div class="Item__Review">
+                               <p class="Stars__Wrapper" style="font-size: 13px;">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                               </p>
+                               <p class="number">(6 nhận xét)</p>
+                           </div>
+                           </div>
+                           <p class="price ">278.409 ₫
+                               <span class="percent ">-40%</span>
+                               <span class="original ">464.000 ₫</span>
+                           </p>
+
+                       </div>
+                       <div class="product--item col-md-4">
+                           <div class="product--item__picture">
+                               <img class="picture__item" src="image/cart/image1.jpg"/>
+                           </div>
+
+                           <div class="title1 " style="max-height: 40px; height: auto;">Kem rửa mặt
+                           </div>
+
+                           <div class="bottom" style="flex: unset;">
+                               <div class="Item__Review">
+                                   <p class="Stars__Wrapper" style="font-size: 13px;">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                   </p>
+                                   <p class="number">(6 nhận xét)</p>
+                               </div>
+                           </div>
+                           <p class="price ">278.409 ₫
+                               <span class="percent ">-40%</span>
+                               <span class="original ">464.000 ₫</span>
+                           </p>
+
+                       </div>
+                       <div class="product--item col-md-4">
+                           <div class="product--item__picture">
+                               <img class="picture__item" src="image/cart/image1.jpg"/>
+                           </div>
+
+                           <div class="title1 " style="max-height: 40px; height: auto;">Kem rửa mặt
+                           </div>
+
+                           <div class="bottom" style="flex: unset;">
+                               <div class="Item__Review">
+                                   <p class="Stars__Wrapper" style="font-size: 13px;">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                   </p>
+                                   <p class="number">(6 nhận xét)</p>
+                               </div>
+                           </div>
+                           <p class="price ">278.409 ₫
+                               <span class="percent ">-40%</span>
+                               <span class="original ">464.000 ₫</span>
+                           </p>
+
+                       </div>
+                       <div class="product--item col-md-4">
+                           <div class="product--item__picture">
+                               <img class="picture__item" src="image/cart/image1.jpg"/>
+                           </div>
+
+                           <div class="title1 " style="max-height: 40px; height: auto;">Kem rửa mặt
+                           </div>
+
+                           <div class="bottom" style="flex: unset;">
+                               <div class="Item__Review">
+                                   <p class="Stars__Wrapper" style="font-size: 13px;">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                   </p>
+                                   <p class="number">(6 nhận xét)</p>
+                               </div>
+                           </div>
+                           <p class="price ">278.409 ₫
+                               <span class="percent ">-40%</span>
+                               <span class="original ">464.000 ₫</span>
+                           </p>
+
+                       </div>
+                   </div>
+           </div>
+          <!--thông tin chi tiết-->
+           <h4 class="sp">Thông tin chi tiết</h4>
+           <div class="container-group container--details">
+               <div class="container--details__group">
+                   <table>
+                       <tbody>
+                       <tr>
+                           <td>Thương hiệu</td>
+                           <td style="color: #2aabd2; cursor: pointer;" alt="#">Yekke</td>
+                       </tr>
+                       <tr>
+                           <td>SKU</td>
+                           <td>9573880753201</td>
+                       </tr>
+                       <tr>
+                           <td>Hướng dẫn bảo quản</td>
+                           <td>
+                               <ul>
+                       <li>Tránh làm rơi sản phẩm, tránh va đập mạnh.</li>
+                       <li>Rửa sạch, lau khô da mặt trước và sau khi dùng.</li>
+                       <li>Bảo quản nơi khô thoáng.</li>
+                               </ul>
+                           </td>
+                       </tr>
+                       </tbody>
+                   </table>
+               </div>
            </div>
 
+<!--           khach hàng nhạn xét-->
+
+
+           <h4 class="sp">Khách hàng nhận xét</h4>
+           <div class="container-group container--description">
+               <div class="container--description__content">
+
+                   <div class="content-review">
+                           <div class="review--rating__heading">Đánh giá</div>
+                           <div class="review--rating__inner">
+                               <div class="review--rating__summary">
+                                   <div class="review--rating__point">
+                                       <div class="star--style">
+                                           <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 32 32"><path fill="none" fill-rule="evenodd" stroke="#FFB500" stroke-width="1.5" d="M16 1.695l-4.204 8.518-9.401 1.366 6.802 6.631-1.605 9.363L16 23.153l8.408 4.42-1.605-9.363 6.802-6.63-9.4-1.367L16 1.695z"></path></svg></span>
+                                           <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 32 32"><path fill="none" fill-rule="evenodd" stroke="#FFB500" stroke-width="1.5" d="M16 1.695l-4.204 8.518-9.401 1.366 6.802 6.631-1.605 9.363L16 23.153l8.408 4.42-1.605-9.363 6.802-6.63-9.4-1.367L16 1.695z"></path></svg></span>
+                                           <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 32 32"><path fill="none" fill-rule="evenodd" stroke="#FFB500" stroke-width="1.5" d="M16 1.695l-4.204 8.518-9.401 1.366 6.802 6.631-1.605 9.363L16 23.153l8.408 4.42-1.605-9.363 6.802-6.63-9.4-1.367L16 1.695z"></path></svg></span>
+                                           <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 32 32"><path fill="none" fill-rule="evenodd" stroke="#FFB500" stroke-width="1.5" d="M16 1.695l-4.204 8.518-9.401 1.366 6.802 6.631-1.605 9.363L16 23.153l8.408 4.42-1.605-9.363 6.802-6.63-9.4-1.367L16 1.695z"></path></svg></span>
+                                           <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 32 32"><path fill="none" fill-rule="evenodd" stroke="#FFB500" stroke-width="1.5" d="M16 1.695l-4.204 8.518-9.401 1.366 6.802 6.631-1.605 9.363L16 23.153l8.408 4.42-1.605-9.363 6.802-6.63-9.4-1.367L16 1.695z"></path></svg></span>
+                                       </div>
+
+                                       <div class="review-rating__total">2 nhận xét</div>
+                                   </div>
+                               </div>
+
+
+                               <div class="review--rating__detail">
+                                   <div class="review-rating__level">
+                                       <div class="star__style">
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+
+                                       </div>
+
+                                       <div class="style__Style">
+                                           <div style="width: 50%"></div>
+                                       </div>
+                                       <div class="review-rating__number">1</div>
+                                   </div>
+                                   <div class="review-rating__level">
+                                       <div class="star__style">
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#ffffff"></i>
+
+                                       </div>
+
+                                       <div class="style__Style">
+                                           <div style="width: 50%"></div>
+                                       </div>
+                                       <div class="review-rating__number">1</div>
+                                   </div>
+                                   <div class="review-rating__level">
+                                       <div class="star__style">
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#fdfdfd"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#fafafa"></i>
+
+                                       </div>
+
+                                       <div class="style__Style">
+
+                                       </div>
+                                       <div class="review-rating__number">0</div>
+                                   </div>
+                                   <div class="review-rating__level">
+                                       <div class="star__style">
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#fafafa"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#fafaf8"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#fafaf8"></i>
+
+                                       </div>
+
+                                       <div class="style__Style">
+
+                                       </div>
+                                       <div class="review-rating__number">0</div>
+                                   </div>
+                                   <div class="review-rating__level">
+                                       <div class="star__style">
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#e9e94f"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#fcfcfb"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#fcfcfb"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#fcfcfb"></i>
+                                           <i class="fas fa-star" style="width: 12px;height: 12px; color:#fcfcfb"></i>
+
+                                       </div>
+
+                                       <div class="style__Style">
+
+                                       </div>
+                                       <div class="review-rating__number">0</div>
+                                   </div>
+                               </div>
+                           </div>
+                   </div>
+
+                   <div class="content-filter">
+                       <div class="filter-review__label">Lọc theo xem :</div>
+                       <div class="filter-review__inner">
+
+                           <div data-view-id="pdp_review_filter_item" data-view-index="0" class="filter-review__item ">
+                               <span class="filter-review__check"></span>
+                               <span class="filter-review__text">Mới nhất</span>
+                           </div>
+
+                           <div data-view-id="pdp_review_filter_item" data-view-index="1" class="filter-review__item ">
+                               <span class="filter-review__check"></span>
+                               <span class="filter-review__text">Có hình ảnh</span>
+                           </div>
+
+                           <div data-view-id="pdp_review_filter_item" data-view-index="2" class="filter-review__item ">
+                               <span class="filter-review__check"></span>
+                               <span class="filter-review__text">Đã mua hàng</span>
+                           </div>
+
+                           <div data-view-id="pdp_review_filter_item" data-view-index="3" class="filter-review__item  ">
+                               <span class="filter-review__check"></span>
+                               <span class="filter-review__text">5</span>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" class="filter-review__star">
+                                   <path fill="none" fill-rule="evenodd" stroke="#FFB500" stroke-width="1.5" d="M16 1.695l-4.204 8.518-9.401 1.366 6.802 6.631-1.605 9.363L16 23.153l8.408 4.42-1.605-9.363 6.802-6.63-9.4-1.367L16 1.695z"></path>
+                               </svg>
+                           </div>
+
+                           <div data-view-id="pdp_review_filter_item" data-view-index="4" class="filter-review__item  ">
+                               <span class="filter-review__check"></span>
+                               <span class="filter-review__text">4</span>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" class="filter-review__star">
+                                   <path fill="none" fill-rule="evenodd" stroke="#FFB500" stroke-width="1.5" d="M16 1.695l-4.204 8.518-9.401 1.366 6.802 6.631-1.605 9.363L16 23.153l8.408 4.42-1.605-9.363 6.802-6.63-9.4-1.367L16 1.695z"></path>
+                               </svg>
+                           </div>
+
+                           <div data-view-id="pdp_review_filter_item" data-view-index="4" class="filter-review__item  ">
+                               <span class="filter-review__check"></span>
+                               <span class="filter-review__text">3</span>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" class="filter-review__star">
+                                   <path fill="none" fill-rule="evenodd" stroke="#FFB500" stroke-width="1.5" d="M16 1.695l-4.204 8.518-9.401 1.366 6.802 6.631-1.605 9.363L16 23.153l8.408 4.42-1.605-9.363 6.802-6.63-9.4-1.367L16 1.695z"></path>
+                               </svg>
+                           </div>
+
+                           <div data-view-id="pdp_review_filter_item" data-view-index="5" class="filter-review__item  ">
+                               <span class="filter-review__check"></span>
+                               <span class="filter-review__text">2</span>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" class="filter-review__star">
+                                   <path fill="none" fill-rule="evenodd" stroke="#FFB500" stroke-width="1.5" d="M16 1.695l-4.204 8.518-9.401 1.366 6.802 6.631-1.605 9.363L16 23.153l8.408 4.42-1.605-9.363 6.802-6.63-9.4-1.367L16 1.695z"></path>
+                               </svg>
+                           </div>
+
+                           <div data-view-id="pdp_review_filter_item" data-view-index="6" class="filter-review__item  ">
+                               <span class="filter-review__check"></span>
+                               <span class="filter-review__text">1</span>
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" class="filter-review__star">
+                                   <path fill="none" fill-rule="evenodd" stroke="#FFB500" stroke-width="1.5" d="M16 1.695l-4.204 8.518-9.401 1.366 6.802 6.631-1.605 9.363L16 23.153l8.408 4.42-1.605-9.363 6.802-6.63-9.4-1.367L16 1.695z"></path>
+                               </svg>
+                           </div>
+                       </div>
+                   </div>
+
+
+               </div>
+           </div>
        </div>
+
+
+
+
 
         <script src="js/image.js"></script>
         <script src="js/add.js"></script>
+
+
+
+
 </body>
 </html>
