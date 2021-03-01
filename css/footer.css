@@ -4,6 +4,9 @@
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 2%;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 #ending h2{
     font-family: 'Playfair Display', serif;
