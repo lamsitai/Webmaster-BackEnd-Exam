@@ -118,7 +118,7 @@
 
 .form-checked-label{
     width: 48%;
-    padding-left: 10px;
+    padding-left: 6px;
     font-weight: 200;
     font-size: 12px;
     padding-top: 4px;
@@ -128,9 +128,18 @@
     text-decoration: none;
     font-size: 12px;
     padding-top: 4px;
-    padding-left: 30px ;
+    padding-left: 4px ;
     font-weight: bold;
     width: 50%;
+    float: right;
+}
+
+.form-checked a{
+    text-decoration: none;
+    font-size: 12px;
+    padding-top: 4px;
+    padding-left: 4px ;
+    font-weight: bold;
     float: right;
 }
 
@@ -165,9 +174,13 @@
     }
 
     .container .head-login h1 {
-        font-size: 32px;
+        font-size: 48px;
         font-weight: bold;
         padding-bottom: 40px;
+    }
+
+    .needs-validation h1 {
+        font-size: 56px;
     }
 
     .signup_section{
@@ -181,7 +194,7 @@
     }
 
     .needs-validation .form-row{
-        padding: 12px 0px;
+        padding: 24px 0px;
     }
 
     .needs-validation .form-control{
@@ -195,6 +208,7 @@
 
     .needs-validation .form-checked-label{
         font-size: 20px;
+        padding-top: 12px;
     }
 
     .form-check a {
@@ -207,26 +221,35 @@
     .container .signup_section .btn-outline-primary{
         width: 45%;
         margin: 8px 13px;
-        height: 50px;
+        height: 64px;
     }
 
 
     /*signin.html*/
 
      .small_text{
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .needs-validation .form-check-input {
-        width: 20px;
+        width: 24px;
         font-size: 40px;
         height: 24px;
-        margin-top:8px;
+        margin-top:10px;
     }
 
     .needs-validation .form-check-label{
-        font-size: 20px;
+        font-size: 24px;
         margin-top: 8px;
+    }
+
+    .form-checked a{
+        text-decoration: none;
+        font-size: 20px;
+        padding-top: 12px;
+        padding-left: 4px ;
+        font-weight: bold;
+        float: right;
     }
 
 

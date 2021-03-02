@@ -12,6 +12,7 @@
     padding-top:72px;
 }
 .container-group{
+    width: 80%;
     margin-bottom: 40px;
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
@@ -40,22 +41,28 @@ ul li img{
     margin-right: 8px;
 }
 #image-main{
-    width: 550px;
+    width: 500px;
 }
 #image-main img{
     margin-left: 24px;
     margin-top: 20px;
+    width: 100%;
     max-height: 500px;
 }
 
 /*text*/
 .container-text{
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 20px;
+    /*padding: 60px;*/
     float: left;
+    width: 50%;
+}
+.container-text{
+    width: 500px;
 }
 .content-text{
-    width: 600px;
+    width: 500px;
 }
 
 .container-text .header{
@@ -88,7 +95,7 @@ ul li img{
     right: -8px;
     display: flex;
     top: 52%;
-    transform: translate(2px, -50%);
+    transform: translate(20px, -50%);
 }
 .brand-style .icon-wrap{
     width: 40px;
@@ -116,7 +123,7 @@ ul li img{
     color: rgb(36, 36, 36);
     font-size: 32px;
     font-weight: 300;
-    line-height: 62px;
+    line-height: 40px;
     max-width: 615px;
 }
  .indexStyle-Review{
@@ -218,11 +225,11 @@ ul li img{
     border-radius: 4px 0px 0px 4px;
     padding: 4px;
 }
-.indexStyle__AddCart .group-input button {
+.indexStyle__AddCart .group-input .input-up-down {
     cursor: pointer;
     width: 30px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(236, 236, 236);
+    border: 1px solid rgb(128, 127, 127);
     height: 30px;
     color: rgb(36, 36, 36);
     font-size: 14px;
@@ -231,10 +238,13 @@ ul li img{
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 
-.indexStyle__AddCart .input{
-    width: 40px;
+.indexStyle__AddCart #quantity{
+    width: 70px;
     height: 30px;
-    border: 1px solid rgb(236, 236, 236);
+    border-top: 1px solid #7a7a7a;
+    border-bottom: 1px solid #777777;
+    border-left: 1px solid #777777;
+    border-right: 1px solid #777777;
     text-align: center;
 }
 .group-button .btn{
@@ -277,10 +287,7 @@ ul li img{
     margin-left: 5%;
 
 }
-/*.slider--container__product{*/
-/*    opacity: 1;*/
-/*    transform: translate3d(0px, 0px, 0px);*/
-/*}*/
+
 .product--item{
     float: left;
     width: 248px;
@@ -482,4 +489,19 @@ ul li img{
     font-size: 16px;
     color: rgb(199, 199, 199);
     margin: 0px 0px 0px 4px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .brand-style {
+        position: absolute;
+        right: -8px;
+        display: flex;
+        top: 52%;
+        transform: translate(100px, -50%);
+    }
+
+    .container-text header{
+        width: 600px;
+    }
 }
