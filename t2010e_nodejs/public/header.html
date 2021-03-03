@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+</head>
+<body>
+<header>
+    <nav id="heading">
+        <div id="heading-left">
+            <a href="home.html">Webmaster</a>
+        </div>
+        <div id="heading-right">
+            <a onclick="toggleNav()"><i class="fas fa-plus"></i></a>
+            <a onclick="openCart()"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div id="hidden-nav">
+            <div id="left-nav">
+                <a href="about.html" class="nav-list">
+                    <h2>About us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+                <a href="#" class="nav-list">
+                    <h2>Shop</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+                <a href="#" class="nav-list">
+                    <h2>Blog</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+                <a href="#" class="nav-list">
+                    <h2>Contact us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+                <form class="nav-list">
+                    <input type="text" placeholder="Search..">
+                    <p style="font-size: 0.8rem"><b>© Copyright 2021 Webmaster | All rights reserved.</b></p>
+                </form>
+            </div>
+            <div id="right-nav"></div>
+        </div>
+        <div id="hidden-cart">
+            <div id="blank-cart"></div>
+            <div id="table-cart">
+                <div id="cart-1">
+                    <p>Webmaster</p>
+                    <i class="fas fa-times" onclick="closeCart()"></i>
+                </div>
+                <div id="cart-2">
+
+                </div>
+                <div id="cart-3">
+                    <div id="paypal">
+                        <a href="#"><i class="fab fa-paypal"></i> PayPal</a>
+                    </div>
+                    <div id="apple-pay">
+                        <a href="#"><i class="fab fa-apple-pay"></i></a>
+                    </div>
+                    <div id="check-out">
+                        <a href="#">Continue to Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+</body>
+</html>

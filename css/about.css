@@ -11,7 +11,7 @@
 }
 
 .about{
-    position: sticky;
+
     column-gap: 0px;
     grid-template-columns: 1.5fr 1.5fr;
     display: flex;
@@ -24,6 +24,7 @@
     url("../image/cart/anh-bia.jpg");
     background-size:  cover;
     background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
 
 }
 .about-text{

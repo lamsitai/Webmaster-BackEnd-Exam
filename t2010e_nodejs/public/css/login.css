@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 30px 100px;
+    border-radius: 5px;
+    margin: 80px auto;
+}
+
+.bg_section_signup{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background: url("../image/cart/background-shop1.jpg") no-repeat;
+    height: 100%;
+    width: 50%;
+}
+
+.needs-validation h1{
+    padding: 60px 0 30px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.needs-validation {
+    margin-top: 12px;
+    width: 50%;
+    margin-left: 100px;
+}
+.needs-validation .form-row{
+    margin: 10px 0;
+}
+
+.form-check{
+    display: flex;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.form-check-label{
+    width: 100%;
+    padding-left: 10px;
+    font-weight: 200;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.container .signup_section .btn-primary{
+    width: 42%;
+    border-radius: 50px;
+    margin: 16px 6px;
+}
+
+.container .signup_section .btn-outline-primary{
+    width:42%;
+    border-radius: 50px;
+    margin: 20px 6px;
+    border: 2px solid #337ab7;
+    color: #337ab7;
+}
+
+.container .signup_section .btn-outline-primary:hover{
+    background-color: #337ab7;
+    color: white;
+}
+
+.small_text{
+    font-size: 12px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+
+
+/*-----------------login-------------*/
+.container .head-login{
+    padding-top: 85px;
+    padding-bottom: 145px;
+}
+
+.container .bg_section_login{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background: url("../image/cart/login.jpg") no-repeat;
+    padding-left: 0px;
+    flex :50%;
+    height: 100%;
+}
+.signup_section{
+    flex: 50%;
+    float: right;
+    margin-left: 100px;
+}
+
+.container .head-login h1{
+    font-size:22px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.form-checked-label{
+    width: 48%;
+    padding-left: 6px;
+    font-weight: 200;
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.form-check a{
+    text-decoration: none;
+    font-size: 12px;
+    padding-top: 4px;
+    padding-left: 4px ;
+    font-weight: bold;
+    width: 50%;
+    float: right;
+}
+
+.form-checked a{
+    text-decoration: none;
+    font-size: 12px;
+    padding-top: 4px;
+    padding-left: 4px ;
+    font-weight: bold;
+    float: right;
+}
+
+@media screen and (max-width: 999px){
+
+    .container{
+        display: block;
+        width: 100%;
+        min-height: 900px;
+        margin: 20% auto;
+    }
+     .container .bg_section_login
+     {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        background: url("../image/cart/login.jpg") no-repeat;
+        padding-left: 0px;
+        width :100%;
+        opacity: 0.3;
+    }
+    .container .bg_section_signup{
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        background: url("../image/cart/background-shop1.jpg") no-repeat;
+        padding-left: 0px;
+        width :100%;
+        opacity: 0.6;
+    }
+
+    .container .head-login h1 {
+        font-size: 48px;
+        font-weight: bold;
+        padding-bottom: 40px;
+    }
+
+    .needs-validation h1 {
+        font-size: 56px;
+    }
+
+    .signup_section{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .needs-validation{
+        margin-left: 200px;
+        width: 60%;
+    }
+
+    .needs-validation .form-row{
+        padding: 24px 0px;
+    }
+
+    .needs-validation .form-control{
+        height: 60px;
+    }
+
+    .needs-validation .form-check-input{
+        width: 20px;
+        margin-top: 12px;
+    }
+
+    .needs-validation .form-checked-label{
+        font-size: 20px;
+        padding-top: 12px;
+    }
+
+    .form-check a {
+        font-size: 18px;
+        padding-top: 5px;
+        padding-left: 124px;
+    }
+
+    .container .signup_section .btn-primary,
+    .container .signup_section .btn-outline-primary{
+        width: 45%;
+        margin: 8px 13px;
+        height: 64px;
+    }
+
+
+    /*signin.html*/
+
+     .small_text{
+        font-size: 22px;
+    }
+
+    .needs-validation .form-check-input {
+        width: 24px;
+        font-size: 40px;
+        height: 24px;
+        margin-top:10px;
+    }
+
+    .needs-validation .form-check-label{
+        font-size: 24px;
+        margin-top: 8px;
+    }
+
+    .form-checked a{
+        text-decoration: none;
+        font-size: 20px;
+        padding-top: 12px;
+        padding-left: 4px ;
+        font-weight: bold;
+        float: right;
+    }
+
+
+
+
+}
+
+
