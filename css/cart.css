@@ -12,13 +12,13 @@
     padding-top:72px;
 }
 .container-group{
-    width: 80%;
+    /*width: 80%;*/
     margin-bottom: 40px;
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
     padding: 15px;
-    margin-right: 10%;
-    margin-left: 10%;
+    /*margin-right: 10%;*/
+    /*margin-left: 10%;*/
 }
 /*image*/
 .image-control{
@@ -275,13 +275,13 @@ ul li img{
 }
 .container--product{
     display: flex;
-    width: 80%;
+    /*width: 80%;*/
     margin-bottom: 40px;
     background-color: #fcfcfc;
     border-radius: 0px 0px 4px 4px;
     padding: 15px;
-    margin-right: 10%;
-    margin-left: 10%;
+    /*margin-right: 10%;*/
+    /*margin-left: 10%;*/
 }
 .slider--container{
     margin-left: 5%;
