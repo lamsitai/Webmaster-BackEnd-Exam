@@ -3,7 +3,7 @@
     padding: 0;
 }
 #heading{
-    position: fixed;
+    /*position: fixed;*/
     display: block;
     background: #1d1d1d;
     width: 100%;

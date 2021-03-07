@@ -27,7 +27,11 @@ app.get("/login",function(req,res){
     res.render("login");
 })
 
-app.get("/sigin",function(req,res){
+app.get("/signin",function(req,res) {
     res.render("signin");
+})
+
+ app.get("/checkout",function(req,res){
+    res.render("checkout");
 })
 

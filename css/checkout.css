@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.checkbox-full{
+    /*width: 100%;*/
+    padding-top: 40px;
+    background-color: white;
+}
+
+.checkbox-layout{
+    display: flex;
+    /*background-color: silver;*/
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    /*background-color: #c8bcbc;*/
+}
+
+/*.container-checkbox{*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    max-width: 940px;*/
+/*    background-color: #c8bcbc;*/
+/*}*/
+
+.checkbox-information{
+    flex: 0 1 600px;
+    margin-right: 20px;
+}
+
+.checkbox-paypal{
+    position: relative;
+}
+
+.checkbox-button__paypal{
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 55px;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.checkbox-button__paypal p{
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    font-style: italic;
+    padding-top: 4px;
+}
+
+.checkbox-button__apple{
+    background-color: rgb(47, 46, 46);
+    border-radius: 2px;
+    align-items: center;
+    margin-bottom: 8px;
+    height: 38px;
+    min-height: 30px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.checkbox-button__apple p {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 0px;
+    text-decoration: none;
+}
+
+/*custom info*/
+
+
+.checkbox-customer{
+    margin-bottom: 20px;
+}
+
+.checkbox-customer__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 4px 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
+}
+
+h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "DM Serif Display";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+}
+.checkout-fullbox{
+    padding: 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    border-right: 1px solid rgb(230, 230, 230);
+    border-left: 1px solid rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
+}
+
+.checkout{
+    margin-bottom: 8px;
+}
+
+.input-full{
+    background-color: rgb(250, 250, 250);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(221, 221, 221);
+    border-radius: 3px;
+    display: block;
+    height: 38px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    padding: 8px 12px;
+    width: 100%;
+    appearance: none;
+}
+
+/*shipping-address*/
+.checkbox-ship-address{
+    margin-bottom: 20px;
+}
+
+.form-group__address {
+    display: flex;
+    flex-direction: column;
+}
+.form-group__address input{
+    margin-bottom: 10px;
+}
+.form-address{
+    display: flex;
+    flex-direction: row;
+}
+
+#inputStreet {
+    width: 100%;
+}
+
+#inputCity {
+    width: 32%;
+}
+
+#inputState {
+    width: 32%;
+    margin-left: 2%;
+}
+
+#inputZip {
+    width: 32%;
+    margin-left: 2%;
+}
+
+#inputCountry {
+    width: 100%;
+}
+
+
+/*payment info*/
+.checkbox-row{
+    display: flex;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.check-column{
+    padding-right: 8px;
+    padding-left: 8px;
+    flex: 1 1 0%;
+}
+
+/*<!--   item in order-->*/
+
+.checkbox-orders{
+    margin-top: 20px;
+}
+
+.order-items{
+    padding: 10px 0;
+    list-style: none;
+}
+
+.order-item .quantity{
+    padding-left: 40px;
+}
+.order-item .quantity button{
+    width: 25px;
+    padding: 0;
+}
+.order-item .quantity input{
+    width: 50px;
+    border: none;
+    text-align: center;
+}
+
+.order-item .price{
+    float: right;
+}
+
+.order-item .price button{
+    width: 25px;
+    margin-left: 10px;
+}
+
+
+#btn-additem{
+    width: 30%;
+    height: 40px;
+    float: right;
+    background-color: #333;
+    text-align: center;
+    color: whitesmoke;
+    padding: 8px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+/*order sumary*/
+
+
+.checkbox-total{
+    flex: 0 1 320px;
+    position: sticky;
+}
+.checkbox-fixed{
+    position: fixed;
+    width: 320px;
+}
+
+.order-summary a{
+    color: black;
+    font-weight: 600;
+}
+
+.order-summary span{
+    float: right;
+}
+
+#btn-checkout{
+    width: 100%;
+    background-color: #333;
+    color: whitesmoke;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+@media all and (max-width: 991px){
+    .checkbox-full{
+        font-size: 18px;
+    }
+
+    .checkbox-layout{
+        display: block;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .checkbox-total{
+        position: sticky;
+        flex-basis: auto;
+        height: 300px;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .checkbox-fixed {
+        position: static;
+        width: 100%;
+    }
+
+}

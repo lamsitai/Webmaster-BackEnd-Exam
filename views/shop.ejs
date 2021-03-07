@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <title>Shop</title>
 
+    <title>Shop</title>
    <%-include('stylesheet_shop')%>
+
 </head>
 <body>
 
@@ -19,8 +17,10 @@
             </div>
             <div id="heading-right">
                 <a onclick="toggleNav()"><i class="fas fa-plus"></i></a>
-                <a onclick="openCart()"><i class="fas fa-shopping-cart"></i></a>
+                <a onclick="openCart()"><p id="cart"><i class="fas fa-shopping-cart"></i></p></a>
             </div>
+
+
             <div id="hidden-nav">
                 <div id="left-nav">
                     <a href="about.ejs" class="nav-list">
@@ -46,25 +46,33 @@
                 </div>
                 <div id="right-nav"></div>
             </div>
-            <div id="hidden-cart">
-                <div id="blank-cart"></div>
-                <div id="table-cart">
-                    <div id="cart-1">
-                        <p>Webmaster</p>
-                        <i class="fas fa-times" onclick="closeCart()"></i>
-                    </div>
-                    <div id="cart-2">
 
-                    </div>
-                    <div id="cart-3">
-                        <div id="paypal">
-                            <a href="#"><i class="fab fa-paypal"></i> PayPal</a>
+            <div id="hidden-cart">
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
                         </div>
-                        <div id="apple-pay">
-                            <a href="#"><i class="fab fa-apple-pay"></i></a>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0 VNĐ</span>
+                            </div>
                         </div>
-                        <div id="check-out">
-                            <a href="#">Continue to Checkout</a>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
                         </div>
                     </div>
                 </div>
@@ -119,61 +127,79 @@
         <div class="collection-box__list">
 
             <div class="tieu_de">
-                <img src="https://images.pexels.com/photos/3756682/pexels-photo-3756682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=300"       alt="">
+
+                <img class="img-prd" src="imgs/cart/anh-bia.jpg"  alt="">
                 <div class="noi_dung">
-                    <h3 class="chuyen_dong_text">Skin recovery</h3>
-                    <p class="chuyen_dong_text">$ 40.00 USD</p>
-                    <a href="" class="chuyen_dong_text"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
+                    <h3 class="chuyen_dong_text content-product-h3">Skin recovery</h3>
+                    <p class="chuyen_dong_text price">
+                        <span class="money">25000đ</span>
+                    </p>
+                    <a class="chuyen_dong_text btn-cart"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
                 </div>
 
 
             </div>
             <div class="tieu_de">
-                <img src="imgs/cart/image1.jpg"      alt="">
+
+                <img class="img-prd" src="imgs/cart/anh-bia-2.jpg" alt="">
                 <div class="noi_dung">
-                    <h3 class="chuyen_dong_text">Skin recovery</h3>
-                    <p class="chuyen_dong_text">$ 40.00 USD</p>
-                    <a href="" class="chuyen_dong_text"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
+                    <h3 class="chuyen_dong_text content-product-h3">Skin 2</h3>
+                    <p class="chuyen_dong_text price">
+                        <span class="money">30000đ</span>
+                    </p>
+                    <a class="chuyen_dong_text btn-cart"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
                 </div>
 
 
             </div>
             <div class="tieu_de">
-                <img src="imgs/cart/image2.jpg"       alt="">
+
+                <img class="img-prd" src="imgs/cart/image1.jpg" alt="">
                 <div class="noi_dung">
-                    <h3 class="chuyen_dong_text">Skin recovery</h3>
-                    <p class="chuyen_dong_text">$ 40.00 USD</p>
-                    <a href="" class="chuyen_dong_text"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
+                    <h3 class="chuyen_dong_text content-product-h3">Skin 3</h3>
+                    <p class="chuyen_dong_text price">
+                        <span class="money">100000đ</span>
+                    </p>
+                    <a class="chuyen_dong_text btn-cart"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
                 </div>
 
 
             </div>
             <div class="tieu_de">
-                <img src="imgs/cart/image3.jpg"       alt="">
+
+                <img class="img-prd" src="imgs/cart/image2.jpg" alt="">
                 <div class="noi_dung">
-                    <h3 class="chuyen_dong_text">Skin recovery</h3>
-                    <p class="chuyen_dong_text">$ 40.00 USD</p>
-                    <a href="" class="chuyen_dong_text"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
+                    <h3 class="chuyen_dong_text content-product-h3">Skin 4 </h3>
+                    <p class="chuyen_dong_text price">
+                        <span class="money">120000đ</span>
+                    </p>
+                    <a class="chuyen_dong_text btn-cart"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
                 </div>
 
 
             </div>
             <div class="tieu_de">
-                <img src="imgs/image4.jpg"       alt="">
+
+                <img class="img-prd" src="imgs/cart/image3.jpg" alt="">
                 <div class="noi_dung">
-                    <h3 class="chuyen_dong_text">Skin recovery</h3>
-                    <p class="chuyen_dong_text">$ 40.00 USD</p>
-                    <a href="" class="chuyen_dong_text"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
+                    <h3 class="chuyen_dong_text content-product-h3">Skin 5</h3>
+                    <p class="chuyen_dong_text price">
+                        <span class="money">100000đ</span>
+                    </p>
+                    <a class="chuyen_dong_text btn-cart"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
                 </div>
 
 
             </div>
             <div class="tieu_de">
-                <img src="imgs/cart/background-shop1.jpg"       alt="">
+
+                <img class="img-prd" src="imgs/cart/image4.jpg" alt="">
                 <div class="noi_dung">
-                    <h3 class="chuyen_dong_text">Skin recovery</h3>
-                    <p class="chuyen_dong_text">$ 40.00 USD</p>
-                    <a href="" class="chuyen_dong_text"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
+                    <h3 class="chuyen_dong_text content-product-h3">Skin 6</h3>
+                    <p class="chuyen_dong_text price">
+                        <span class="money">250000đ</span>
+                    </p>
+                    <a class="chuyen_dong_text btn-cart"><i class="fas fa-shopping-cart"></i> Mua hàng</a>
                 </div>
 
 
@@ -258,6 +284,7 @@
 
 
 <script src="js/header.js"></script>
+<script src="js/app.js"></script>
 <script src="support/aos-master/aos.js"></script>
 <script>
     AOS.init({

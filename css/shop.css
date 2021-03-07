@@ -13,6 +13,7 @@ html{
 .background-image__shop {
     position: relative;
     display: flex;
+    width: 100%;
     justify-content: center;
     background-image: url("../image/cart/background-shop1.jpg");
     align-items: center;
@@ -225,6 +226,7 @@ html{
 .tieu_de:hover .chuyen_dong_text{
     transform:  translateX(0);
     opacity: 1;
+    cursor: pointer;
 }
 
 

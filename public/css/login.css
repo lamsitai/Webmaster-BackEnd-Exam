@@ -48,6 +48,11 @@ a img {
     font-size: 22px;
     margin-bottom: 40px;
 }
+
+.container .bg_section_login{
+    background: url("../imgs/cart/bg_login_desk.png") no-repeat;
+}
+
 @media only screen and (max-width: 575px) {
     .container .login_section form h1, .container .signup_section form h1 {
         font-size: 28px;
@@ -93,7 +98,8 @@ a img {
         padding: 10px 40px;
     }
 }
-.container .login_section form .btn-outline-primary, .container .signup_section form .btn-outline-primary {
+.container .login_section form .btn-outline-primary,
+.container .signup_section form .btn-outline-primary {
     border: 2px solid #2cabee;
     color: #2cabee;
     margin-left: 4px;
@@ -120,10 +126,11 @@ a img {
 }
 
 
-.container .login_section form .form-row .form-control, .container .signup_section form .form-row .form-control {
+.container .login_section form .form-row .form-control,
+.container .signup_section form .form-row .form-control {
     width: 280px;
-    font-size: 0.85rem;
-    padding: 8px 20px;
+    /*font-size: 0.85rem;*/
+    /*padding: 8px 20px;*/
     margin-top: 10px;
 }
 @media only screen and (max-width: 575px) {
@@ -136,9 +143,11 @@ a img {
     }
 }
 
-.container .login_section form .form-check, .container .signup_section form .form-check {
+.container .login_section form .form-check,
+.container .signup_section form .form-check {
     margin-top: 5px;
     line-height: 1.5;
+    display: flex;
 }
 @media only screen and (max-width: 575px) {
 
@@ -164,9 +173,10 @@ a img {
 }
 
 .container .login_section form .form-check .form-check-label,
-.container .signup_section form .form-check .form-check-label {
+.container .signup_section form .form-check .form-check-label{
     color: #98a6a9;
-    padding-left: 5px;
+    padding-left: 4px;
+    padding-top: 4px;
 }
 
 .error {
@@ -311,10 +321,12 @@ body {
 
 .container .bg_section_login {
     background: url("../imgs/cart/bg_login_desk.png") no-repeat;
+    height: 660px;
 }
 
 .container .bg_section_signup {
     background: url("../imgs/cart/bg_signup_desk.png") no-repeat;
+    height: 660px;
 }
 
 .container .login_section {
@@ -376,6 +388,7 @@ body {
     margin-left: 80px;
     color: #2cabee;
     font-weight: bold;
+    padding-top: 4px;
 }
 @media only screen and (min-width: 720px) and (max-width: 991px) {
 
@@ -485,4 +498,8 @@ body {
     color: #2cabee;
     font-weight: bold;
 }
-
+/*.form-check {*/
+/*    position: relative;*/
+/*    display: block;*/
+/*    !* padding-left: 1.25rem; *!*/
+/*}*/
