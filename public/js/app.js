@@ -15,7 +15,8 @@ close_footer.onclick = function () {
     modal.style.display = "none";
 }
 order.onclick = function () {
-    alert("Cảm ơn bạn đã thanh toán đơn hàng")
+    alert("Cảm ơn bạn đã thanh toán đơn hàng");
+    modal.style.display = "none";
 }
 window.onclick = function (event) {
     if (event.target == modal) {
@@ -106,7 +107,7 @@ function addItemToCart(title, price, img) {
   <span class="cart-price cart-column">${price}</span>
   <div class="cart-quantity cart-column">
       <input class="cart-quantity-input" type="number" value="1">
-      <button class="btn btn-danger" type="button">Xóa</button>
+      <button class="btn btn-danger" type="button">Detele</button>
   </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)

@@ -249,13 +249,18 @@ ul li img{
     border: none;
     border-radius: 4px;
     outline: none;
-    color:#ffffff;
     font: 15px "Roboto Thin";
     background-color: #ff3945;
     padding: 1px 6px;
     margin-top: 14px;
     text-transform: uppercase;
     cursor: pointer;
+
+}
+
+.group-button .btn a{
+    text-decoration: none;
+    color:#ffffff;
 }
 
 
@@ -322,10 +327,10 @@ ul li img{
     color: rgb(120, 120, 120);
 }
 .title1{
-    margin-top: -10px;
+    margin-top: 10px;
     max-height: 40px;
     height: auto;
-    padding-right: 132px;
+    padding-right: 70px;
 }
 .price{
     margin: 0px;
