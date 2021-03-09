@@ -15,7 +15,8 @@ close_footer.onclick = function () {
     modal.style.display = "none";
 }
 order.onclick = function () {
-    alert("Cảm ơn bạn đã thanh toán đơn hàng")
+    alert("Cảm ơn bạn đã thanh toán đơn hàng");
+    modal.style.display = "none";
 }
 window.onclick = function (event) {
     if (event.target == modal) {
@@ -73,7 +74,7 @@ for (var i = 0; i < add_cart.length; i++) {
         var button = event.target;
         var product = button.parentElement.parentElement;
         var img = product.parentElement.getElementsByClassName("img-prd")[0].src
-        var title = product.getElementsByClassName("content-product-h3")[0].innerText
+        var title = product.getElementsByClassName("content-product-a")[0].innerText
         var price = product.getElementsByClassName("price")[0].innerText
         addItemToCart(title, price, img)
         // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
@@ -106,7 +107,7 @@ function addItemToCart(title, price, img) {
   <span class="cart-price cart-column">${price}</span>
   <div class="cart-quantity cart-column">
       <input class="cart-quantity-input" type="number" value="1">
-      <button class="btn btn-danger" type="button">Xóa</button>
+      <button class="btn btn-danger" type="button">Detele</button>
   </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)

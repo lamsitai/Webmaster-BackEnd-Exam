@@ -177,11 +177,15 @@ html{
     padding-top: 30px;
 }
 
-.tieu_de h3 {
-    margin: 20px 0 0 0;
+.tieu_de .content-product-a{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
     transform: translateX(50px);
     font-size: 36px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 100%;
 }
 .tieu_de p {
     margin: 20px 0 0 0;
@@ -193,10 +197,10 @@ html{
 }
 .tieu_de a{
     position: absolute;
-    margin: 20px 60px 10px 0;
+    /*margin: 20px 60px 10px 0;*/
     display: inline-block;
-    width: 160px;
-    text-align: center;
+    width: 100%;
+    /*text-align: center;*/
     bottom: 0;
     right: 0;
     text-decoration: none;
