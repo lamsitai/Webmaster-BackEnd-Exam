@@ -226,6 +226,9 @@ html{
     transform:  translateX(0);
     opacity: 1;
 }
+.noi_dung .btn-cart{
+    cursor: pointer;
+}
 
 
 /*policy*/

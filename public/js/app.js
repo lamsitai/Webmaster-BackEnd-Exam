@@ -1,7 +1,7 @@
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("cart");
 var close = document.getElementsByClassName("close")[0];
-// tại sao lại có [0] như  thế này bởi vì mỗi close là một html colection nên khi mình muốn lấy giá trị html thì phải thêm [0]. 
+//  mỗi close là một html colection nên khi mình muốn lấy giá trị html thì phải thêm [0].
 
 var close_footer = document.getElementsByClassName("close-footer")[0];
 var order = document.getElementsByClassName("order")[0];

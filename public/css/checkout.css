@@ -262,6 +262,11 @@ h4{
         font-size: 18px;
     }
 
+    .checkbox-information {
+        flex: 0 1 600px;
+         margin-right: 0px;
+    }
+
     .checkbox-layout{
         display: block;
         flex-direction: column;
@@ -279,6 +284,10 @@ h4{
     .checkbox-fixed {
         position: static;
         width: 100%;
+    }
+
+    .checkbox-customer__info {
+        margin-top: 20px;
     }
 
 }

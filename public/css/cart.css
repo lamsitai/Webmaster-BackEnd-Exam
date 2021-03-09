@@ -142,7 +142,7 @@ ul li img{
  }
 
  .body .product-and-icon{
-     width: 480px;
+     /*width: 480px;*/
      height: 112px;
      display: flex;
      flex-direction: column;
