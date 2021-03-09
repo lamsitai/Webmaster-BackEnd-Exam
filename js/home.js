@@ -1,28 +1,3 @@
-function thirdBody(){
-    var a = document.getElementById('first-line');
-    var b = document.getElementById('second-line');
-    var c = document.getElementById('third-line');
-    var one = document.getElementById('image-one');
-    var two = document.getElementById('image-two');
-    if(a.innerHTML === 'Thought for maximum results without irritation'){
-        a.innerHTML = 'Innovative treatments for face skincare';
-        b.innerHTML = 'Lorem ipsum dolor sit amNam porta vehicula purus, ac porttitor dolor consectetur ' +
-            'eget. Vestibulum convallis dignissim ligula, at euismod tortor tempus id.';
-        c.innerHTML = 'Lorem ipsum dolor sit amNam porta vehicula purus, ac porttitor dolor consectetur ' +
-            'eget. Vestibulum convallis dignissim ligula, at euismod tortor tempus id.';
-        one.src = 'image/home/body-3rd-image-reserve.jpg';
-        two.src = 'image/home/body-4th-image-reserve.jpg';
-    }else{
-        a.innerHTML = 'Thought for maximum results without irritation';
-        b.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim ' +
-            'in eros elementum tristique.';
-        c.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim ' +
-            'in eros elementum tristique.';
-        one.src = 'image/home/body-3rd-image.jpg';
-        two.src = 'image/home/body-4th-image.jpg';
-    }
-}
-
 function blogHover1() {
     var a = document.getElementById('blog-hidden-1');
     var x = document.getElementById('blog-text-1');
