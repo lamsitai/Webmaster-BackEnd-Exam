@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Checkout</title>
-<!--    <link rel="stylesheet" href="support/bootstrap/css/bootstrap.css">-->
-<!--    &lt;!&ndash;    <link rel="stylesheet" href="support/jquery/jquery-3.5.1.min.js">&ndash;&gt;-->
-<!--    <link rel="stylesheet" href="support/fon-awesome/css/all.css">-->
-<!--    <link rel="stylesheet" href="css/checkout.css">-->
-<!--    <link rel="stylesheet" href="css/header.css">-->
-<!--    <link rel="stylesheet" href="css/footer.css">-->
+
     <%-include('stylesheet_checkout')%>
 
 </head>
@@ -19,7 +14,7 @@
             <a href="/home">Webmaster</a>
         </div>
         <div id="heading-right">
-            <a onclick="toggleNav()"><i class="fas fa-plus"></i></a>
+            <a onclick="toggleNav()"><i class="fas fa-bars"></i></a>
             <a onclick="openCart()"><i class="fas fa-shopping-cart"></i></a>
         </div>
         <div id="hidden-nav">
@@ -28,7 +23,7 @@
                     <h2>About us</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </a>
-                <a href="#" class="nav-list">
+                <a href="/shop" class="nav-list">
                     <h2>Shop</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </a>
@@ -84,10 +79,7 @@
                 <p>Paypal</p>
             </div>
 
-<!--            <div class="checkbox-button__apple">-->
-<!--                <p> <i class="fab fa-apple-pay"></i></p>-->
-<!--            </div>-->
-
+<!--
             <form class="checkbox-customer">
                 <div class="checkbox-customer__info">
                     <h4>Customer Info</h4>
